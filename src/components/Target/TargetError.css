@@ -1,0 +1,14 @@
+.error-container {
+  background-color: rgba(80, 92, 94, 0.199);
+  width: 16rem;
+  height: 16rem;
+  border-radius: 0 32px 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-logo {
+  font-weight: 600;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.685);
+}

@@ -1,0 +1,23 @@
+.SearchButton {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  margin: 8px;
+}
+.SearchButton > input {
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  padding: 0 20px;
+  font-size: 18px;
+}
+.search-logo {
+  background-color: rgb(85, 145, 255);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

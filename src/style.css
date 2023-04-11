@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&family=Red+Rose:wght@300&family=Rubik&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
