@@ -12,10 +12,11 @@ const Test = () => {
   useEffect(() => {
     const getApi = async () => {
       try {
+        if (city === null) return;
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30a41206416fa928ade86c7a29b6b030`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f6fe050ced099d0d2bf4459f01ccc685`
         );
-        if (!response.ok) return setData(null);
+        if (!response.ok) return setData(true);
         const json = await response.json();
         setData(json);
       } catch (err) {
@@ -32,7 +33,9 @@ const Test = () => {
         setCity={setCity}
         searchCity={searchCity}
       />
-      {!data ? (
+      {data === null ? (
+        <></>
+      ) : data === true ? (
         <TargetError />
       ) : (
         <DataTarget

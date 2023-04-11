@@ -4,7 +4,11 @@ import './SearchButton.css';
 const SearchButton = (props) => {
   return (
     <div className="SearchButton">
-      <input type="search" onChange={(e) => props.setCity(e.target.value)} />
+      <input
+        type="search"
+        onChange={(e) => props.setCity(e.target.value)}
+        placeholder="Write a city"
+      />
       <div
         className="search-logo"
         onClick={(e) => props.setSearchCity(!props.searchCity)}
