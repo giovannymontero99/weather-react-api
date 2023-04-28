@@ -14,6 +14,7 @@ const Test = () => {
       try {
         if (city === null) return;
         const response = await fetch(
+          // API KEY !!
           `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f6fe050ced099d0d2bf4459f01ccc685`
         );
         if (!response.ok) return setData(true);
